@@ -4,7 +4,7 @@ FROM elixir:1.7.4
 RUN mix local.hex --force
 RUN mix local.rebar --force
 
-# install the latest phoenix 
+# install the phoenix 1.3.4
 RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new-1.3.4.ez --force
 
 # create app folder
